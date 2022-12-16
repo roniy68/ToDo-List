@@ -2,180 +2,180 @@
               Reset CSS
 *\==================================== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  button {
-    border: none;
-    background: none;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  input,
-  textarea {
-    border: none;
-    outline: none;
-    resize: none;
-  }
-  
-  :root {
-    /* Colors */
-    --primary-color: #f1f2f5;
-    --secondary-color: #fff;
-    --third-color: #545862;
-    --shadow-1: 0 2px 8px rgb(0 0 0 / 15%);
-  
-    /* font sizes  */
-    --fs-0: 1rem;
-    --fs-1: 1.5rem;
-  
-    /* font weight */
-    --fw-400: 400;
-  
-    /* height  */
-    --h-1: 50px;
-  }
-  
-  html {
-    font-size: 62.5%;
-    font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif;
-    font-weight: 300;
-  }
-  
-  /* ====================================*\
+button {
+  border: none;
+  background: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+:root {
+  /* Colors */
+  --primary-color: #f1f2f5;
+  --secondary-color: #fff;
+  --third-color: #545862;
+  --shadow-1: 0 2px 8px rgb(0 0 0 / 15%);
+
+  /* font sizes  */
+  --fs-0: 1rem;
+  --fs-1: 1.5rem;
+
+  /* font weight */
+  --fw-400: 400;
+
+  /* height  */
+  --h-1: 50px;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Open Sans', 'Lucida Grande', tahoma, verdana, arial, sans-serif;
+  font-weight: 300;
+}
+
+/* ====================================*\
                 Main
   *\==================================== */
-  main {
-    background-color: var(--primary-color);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  main .list-placeholder {
-    max-width: 500px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--primary-color);
-    box-shadow: var(--shadow-1);
-  }
-  
-  /* title + refresh list  */
-  
-  main .list-placeholder .list-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--secondary-color);
-  }
-  
-  main .list-placeholder .list-header h1 {
-    color: var(--third-color);
-    font-size: var(--fs-1);
-    font-weight: var(--fw-400);
-    padding: var(--fs-0);
-    text-overflow: ellipsis;
-  }
-  
-  main .list-placeholder .list-header i {
-    color: #333;
-    font-size: var(--fs-1);
-    padding: var(--fs-0);
-    cursor: pointer;
-  }
-  
-  /* Add list */
-  
-  main .list-placeholder .submit-item {
-    width: 100%;
-    position: relative;
-  }
-  
-  main .list-placeholder .submit-item input[type='text'] {
-    width: 100%;
-    padding: 0 40px 0 var(--fs-1);
-    height: var(--h-1);
-    border-top: 1px solid var(--primary-color);
-    border-bottom: 1px solid var(--primary-color);
-    font-style: italic;
-    font-size: var(--fs-1);
-  }
-  
-  main .list-placeholder .submit-item button[type='submit'] {
-    position: absolute;
-    right: 0;
-    height: 50px;
-    width: 40px;
-    cursor: pointer;
-    color: #ddd;
-  }
-  
-  /* clear button  */
-  main .list-placeholder .clear-btn {
-    margin: var(--fs-1) auto;
-    opacity: 0.5;
-    font-size: var(--fs-1);
-  }
-  
-  main .list-placeholder .clear-btn:hover {
-    text-decoration: underline;
-    cursor: pointer;
-  }
-  
-  /* list content  */
-  .list-content {
-    width: 100%;
-    background-color: var(--secondary-color);
-  }
-  
-  .list-content li {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    padding: 0 var(--fs-1);
-    font-size: var(--fs-1);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--fs-0);
-  }
-  
-  .list-content li button {
-    border: 2px solid #c1c1c3;
-    cursor: pointer;
-    color: transparent;
-    border-radius: 2px;
-    margin: var(--fs-1) 0;
-    background-color: transparent;
-    width: 18px;
-    height: 18px;
-  }
-  
-  .list-placeholder .list-content li > i {
-    cursor: move;
-  }
-  
-  .list-placeholder .list-content li button > i {
-    color: #2e8ae6;
-    display: none;
-  }
-  
-  .list-content li button i.active {
-    display: inline;
-  }
-  
-  .list-content li .container {
-    flex: 1;
-    font-size: var(--fs-1);
-    word-wrap: break-word;
-    display: flex;
-    align-items: center;
-    padding: 16px 0;
-  }
+main {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .list-placeholder {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--primary-color);
+  box-shadow: var(--shadow-1);
+}
+
+/* title + refresh list  */
+
+main .list-placeholder .list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+}
+
+main .list-placeholder .list-header h1 {
+  color: var(--third-color);
+  font-size: var(--fs-1);
+  font-weight: var(--fw-400);
+  padding: var(--fs-0);
+  text-overflow: ellipsis;
+}
+
+main .list-placeholder .list-header i {
+  color: #333;
+  font-size: var(--fs-1);
+  padding: var(--fs-0);
+  cursor: pointer;
+}
+
+/* Add list */
+
+main .list-placeholder .submit-item {
+  width: 100%;
+  position: relative;
+}
+
+main .list-placeholder .submit-item input[type='text'] {
+  width: 100%;
+  padding: 0 40px 0 var(--fs-1);
+  height: var(--h-1);
+  border-top: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+  font-style: italic;
+  font-size: var(--fs-1);
+}
+
+main .list-placeholder .submit-item button[type='submit'] {
+  position: absolute;
+  right: 0;
+  height: 50px;
+  width: 40px;
+  cursor: pointer;
+  color: #ddd;
+}
+
+/* clear button  */
+main .list-placeholder .clear-btn {
+  margin: var(--fs-1) auto;
+  opacity: 0.5;
+  font-size: var(--fs-1);
+}
+
+main .list-placeholder .clear-btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* list content  */
+.list-content {
+  width: 100%;
+  background-color: var(--secondary-color);
+}
+
+.list-content li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0 var(--fs-1);
+  font-size: var(--fs-1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--fs-0);
+}
+
+.list-content li button {
+  border: 2px solid #c1c1c3;
+  cursor: pointer;
+  color: transparent;
+  border-radius: 2px;
+  margin: var(--fs-1) 0;
+  background-color: transparent;
+  width: 18px;
+  height: 18px;
+}
+
+.list-placeholder .list-content li > i {
+  cursor: move;
+}
+
+.list-placeholder .list-content li button > i {
+  color: #2e8ae6;
+  display: none;
+}
+
+.list-content li button i.active {
+  display: inline;
+}
+
+.list-content li .container {
+  flex: 1;
+  font-size: var(--fs-1);
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+}
