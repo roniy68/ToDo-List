@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 button {
@@ -67,7 +67,6 @@ main .list-placeholder {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--primary-color);
   box-shadow: var(--shadow-1);
   background-color: rgba(97, 67, 97, 0.153);
   padding: 25px;
