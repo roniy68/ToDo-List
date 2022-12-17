@@ -1,5 +1,6 @@
 import './style.css';
 import Tasks from './tasks.js';
+import statusUpdateBtns from './status.js';
 
 const toDoTasks = new Tasks();
 const listContent = document.querySelector('.list-content');
@@ -30,26 +31,7 @@ const sortArray = (arr) => arr.sort((a, b) => a.index - b.index);
 const populateListItemsWithCheckBtns = (arr) => {
   populateListItems(sortArray(arr));
   // After populating list items, we add click listener on check marks
-  const checkBtns = document.querySelectorAll('.check-btn');
-  checkBtns.forEach((checkBtn, index) => {
-    checkBtn.addEventListener('click', () => {
-      checkBtn.childNodes[0].classList.toggle('active');
-      checkBtn.nextElementSibling.classList.toggle('active');
-      if (checkBtn.childNodes[0].classList.contains('active')) {
-        toDoTasks.modifyTask(
-          index,
-          checkBtn.nextElementSibling.textContent.trim(),
-          true,
-        );
-      } else {
-        toDoTasks.modifyTask(
-          index,
-          checkBtn.nextElementSibling.textContent.trim(),
-          false,
-        );
-      }
-    });
-  });
+  statusUpdateBtns(toDoTasks);
 
   // Modify values + delete btn event listener
   const modifyTaskLists = document.querySelectorAll('.content-description');
