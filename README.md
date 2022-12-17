@@ -43,7 +43,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[To-Do List](https://annaeliana7.github.io/ToDo-List/)
+[To-Do List](https://annaeliana7.github.io/ToDo-List/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,3 +135,9 @@ Thanks to Microverse for the education
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<br>
+
+<div align="center">
+    <img src="kefi-Unearthed-5.png" alt="logo" width="250"  height="auto" />
+    <h3><b>Anna Petras for King Yeshua - Kefi Unearthed</b></h3>
