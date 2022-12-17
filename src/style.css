@@ -5,7 +5,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 button {
@@ -22,6 +21,7 @@ textarea {
   border: none;
   outline: none;
   resize: none;
+  padding: 12px;
 }
 
 :root {
@@ -64,12 +64,12 @@ main .list-placeholder {
   max-width: 800px;
   width: 100%;
   height: 500px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  box-shadow: var(--shadow-1);
   background-color: rgba(97, 67, 97, 0.153);
-  padding: 25px;
+  box-shadow: var(--shadow-1);
 }
 
 /* title + refresh list  */
@@ -101,6 +101,10 @@ main .list-placeholder .list-header i {
 main .list-placeholder .submit-item {
   width: 100%;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
 }
 
 main .list-placeholder .submit-item input[type='text'] {
@@ -148,6 +152,7 @@ main .list-placeholder .clear-btn:hover {
   align-items: center;
   justify-content: space-between;
   gap: var(--fs-0);
+  position: relative;
 }
 
 .list-content li button {
@@ -161,8 +166,22 @@ main .list-placeholder .clear-btn:hover {
   height: 18px;
 }
 
-.list-placeholder .list-content li > i {
+.list-placeholder .list-content li > .move-item {
   cursor: move;
+}
+
+.list-placeholder .list-content li > .move-item.none {
+  cursor: move;
+  display: none;
+}
+
+.list-placeholder .list-content li > .delete-item {
+  cursor: pointer;
+  display: none;
+}
+
+.list-placeholder .list-content li > .delete-item.active {
+  display: inline;
 }
 
 .list-placeholder .list-content li button > i {
@@ -180,5 +199,32 @@ main .list-placeholder .clear-btn:hover {
   word-wrap: break-word;
   display: flex;
   align-items: center;
+}
+
+.list-content li .container.active {
+  text-decoration: line-through;
+}
+
+.list-content li .container .content-description {
+  width: 100%;
+  outline: none;
   padding: 16px 0;
+}
+
+.list-content li.editing {
+  background-color: #fffeca;
+}
+
+.refresh-btn.active {
+  animation: animateRefresh 2s;
+}
+
+@keyframes animateRefresh {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(720deg);
+  }
 }
