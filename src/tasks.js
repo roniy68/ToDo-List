@@ -1,10 +1,10 @@
 export default class Tasks {
   constructor() {
-    this.arr = JSON.parse(localStorage.getItem("tasks")) || [];
+    this.arr = JSON.parse(localStorage.getItem('tasks')) || [];
   }
 
   setLocalStorageItem = () => {
-    localStorage.setItem("tasks", JSON.stringify(this.arr));
+    localStorage.setItem('tasks', JSON.stringify(this.arr));
   };
 
   addNewTask = ({
