@@ -12,12 +12,12 @@ const populateListItems = (arrayOfTasks) => {
     listContent.innerHTML += `
     <li>
       <button class="check-btn" ><i class="fa-solid fa-check ${
-        task.completed ? 'active' : ''
-      }"></i></button>
+  task.completed ? 'active' : ''
+}"></i></button>
       <div class="container ${task.completed ? 'active' : ''}">
       <div contenteditable="true" class="content-description">${
-        task.description
-      }</div>
+  task.description
+}</div>
       </div>
       <i class="move-item fa-solid fa-ellipsis-vertical"></i>
       <i class="delete-item fa-regular fa-trash-can"></i>
@@ -42,7 +42,7 @@ const populateListItemsWithCheckBtns = (arr) => {
       toDoTasks.modifyTask(
         index,
         modifyTask.textContent,
-        toDoTasks.arr[index].completed
+        toDoTasks.arr[index].completed,
       );
     });
 
