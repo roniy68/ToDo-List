@@ -135,3 +135,9 @@ Thanks to Microverse for the education
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<br>
+
+<div align="center">
+    <img src="kefi-Unearthed-5.png" alt="logo" width="250"  height="auto" />
+    <h3><b>Anna Petras for King Yeshua - Kefi Unearthed</b></h3>
