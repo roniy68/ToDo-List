@@ -43,7 +43,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-[To-Do List](https://annaeliana7.github.io/ToDo-List/)
+[To-Do List](https://annaeliana7.github.io/ToDo-List/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
