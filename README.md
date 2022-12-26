@@ -1,12 +1,13 @@
 <a name="readme-top"></a>
 
 <div align="center">
-
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-  <br/>
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+  <img src="kefi-Unearthed-5.png" alt="logo" width="280"  height="auto" />
   
-<h3><b>Microverse README Template</b></h3>
+    <h3><b>Anna Petras for KING YESHUA - Kefi Unearthed</b></h3>
+  <br/>
+💜
+  <h3><b>Personal README Template</b></h3>
   <br/>
 </div>
 
@@ -124,7 +125,8 @@ Give a ⭐️ if you like this project!
 
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-Thanks to Microverse for the education
+💜 HaShem (Abba) and Yeshua, I LOVE YOU! 💜 Thank you!
+I HONOR + GLORIFY YOU FOREVER ... 💜
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -138,6 +140,15 @@ This project is [MIT](./LICENSE) licensed.
 
 <br>
 
+<!-- Author's message -->
+
 <div align="center">
     <img src="kefi-Unearthed-5.png" alt="logo" width="250"  height="auto" />
-    <h3><b>Anna Petras for King Yeshua - Kefi Unearthed</b></h3>
+    <h3><b>Anna Petras for KING YESHUA - Kefi Unearthed</b></h3>
+💜
+<br>
+💜
+<br>
+💜
+<br>
+PETRAS FAMILY
